@@ -1,29 +1,102 @@
+/* Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1f26;
+  color: #dcdcdc;
+}
+
 div {
-  background-color: rgb(78, 141, 134);
-  margin: 0%;
-  padding: 0%;
-  border: 2px solid black;
+  background-color: #2e2f37;
+  margin: 0;
+  padding: 20px;
+  border: 2px solid #44475a;
   width: 100%;
-  height: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
-  font-size: 60px;
-  color: #FFA500;
+  font-size: 2.5rem;
+  color: #ff79c6;
+  margin-bottom: 20px;
 }
 
 h2 {
   text-align: center;
-  font-size: 35px;
-  color: #FFA500;
+  font-size: 1.75rem;
+  color: #8be9fd;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f8f8f2;
 }
 
 hr {
   border: solid;
-  border-color: rgb(172, 203, 58);
+  border-color: #50fa7b;
+  margin: 40px 0;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Hover Effects */
+h1:hover,
+h2:hover {
+  color: #50fa7b;
+}
+
+p:hover {
+  color: #ffb86c;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  div {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  img {
+    max-width: 30%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
